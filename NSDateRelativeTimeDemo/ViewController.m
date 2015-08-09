@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NSDate+RelativeTime.h"
 
 @interface ViewController ()
 
@@ -16,12 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"===> %@",[[[NSDate date] dateByAddingTimeInterval:-1] findRelativeTimeString]);
+    NSLog(@"===> %@",[[[NSDate date] dateByAddingTimeInterval:-5] findRelativeTimeString]);
+    NSLog(@"===> %@",[[[NSDate date] dateByAddingTimeInterval:-60] findRelativeTimeString]);
+    NSLog(@"===> %@",[[[NSDate date] dateByAddingTimeInterval:-60*5] findRelativeTimeString]);
+    NSLog(@"===> %@",[[[NSDate date] dateByAddingTimeInterval:-60*60*24] findRelativeTimeString]);
+    NSLog(@"===> %@",[[[NSDate date] dateByAddingTimeInterval:-60*60*24*5] findRelativeTimeString]);
+    NSLog(@"===> %@",[[[NSDate date] dateByAddingTimeInterval:-60*60*24*7] findRelativeTimeString]);
+    NSLog(@"===> %@",[[[NSDate date] dateByAddingTimeInterval:-60*60*24*7*10] findRelativeTimeString]);
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 @end

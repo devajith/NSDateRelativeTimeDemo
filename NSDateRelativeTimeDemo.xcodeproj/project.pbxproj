@@ -14,6 +14,7 @@
 		ABC951331B77C39300FF2F19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC951321B77C39300FF2F19 /* Images.xcassets */; };
 		ABC951361B77C39300FF2F19 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABC951341B77C39300FF2F19 /* LaunchScreen.xib */; };
 		ABC951421B77C39300FF2F19 /* NSDateRelativeTimeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC951411B77C39300FF2F19 /* NSDateRelativeTimeDemoTests.m */; };
+		ABC9514D1B77C3AD00FF2F19 /* NSDate+RelativeTime.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC9514C1B77C3AD00FF2F19 /* NSDate+RelativeTime.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		ABC9513B1B77C39300FF2F19 /* NSDateRelativeTimeDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSDateRelativeTimeDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC951401B77C39300FF2F19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABC951411B77C39300FF2F19 /* NSDateRelativeTimeDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSDateRelativeTimeDemoTests.m; sourceTree = "<group>"; };
+		ABC9514B1B77C3AD00FF2F19 /* NSDate+RelativeTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RelativeTime.h"; sourceTree = "<group>"; };
+		ABC9514C1B77C3AD00FF2F19 /* NSDate+RelativeTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RelativeTime.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 		ABC951191B77C39300FF2F19 = {
 			isa = PBXGroup;
 			children = (
+				ABC9514B1B77C3AD00FF2F19 /* NSDate+RelativeTime.h */,
+				ABC9514C1B77C3AD00FF2F19 /* NSDate+RelativeTime.m */,
 				ABC951241B77C39300FF2F19 /* NSDateRelativeTimeDemo */,
 				ABC9513E1B77C39300FF2F19 /* NSDateRelativeTimeDemoTests */,
 				ABC951231B77C39300FF2F19 /* Products */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABC9512E1B77C39300FF2F19 /* ViewController.m in Sources */,
+				ABC9514D1B77C3AD00FF2F19 /* NSDate+RelativeTime.m in Sources */,
 				ABC9512B1B77C39300FF2F19 /* AppDelegate.m in Sources */,
 				ABC951281B77C39300FF2F19 /* main.m in Sources */,
 			);
